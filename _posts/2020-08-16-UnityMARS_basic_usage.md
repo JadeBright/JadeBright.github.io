@@ -2,7 +2,7 @@
 title: Unity MARS 기초 사용법 (1)
 author: JadeBright
 date: 2020-08-16 18:00:00 +0900
-categories: [Unity/C#, AR/VR]
+categories: ["Unity/C#", "AR/VR"]
 tags: [Unity MARS]
 ---
 
