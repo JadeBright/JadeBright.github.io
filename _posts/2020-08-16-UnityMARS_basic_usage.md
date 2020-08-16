@@ -12,7 +12,7 @@ Unity MARS(Mixed and Augmented Reality Studio)는 지능형 AR 어플리케이�
 
 ## 설치법
 
-[다운로드 링크](https://unity.com/kr/products/unity-mars)에서 다운로드 가능하며 unitypackage 형식으로 제공된다. 만약 unitypackge 파일을 다시 다운로드 받고 싶다면 Unity 사이트 로그인후 settings의 내 계정 - 내 시트에서 다시 다운로드 가능하다. 또한 *무료 체험판만 사용해보고 싶다면 settings의 내 계정 - 내 시트에서 톱니바퀴 모양의 관리 버튼을 누른 뒤 구독 관리에서 자동 갱신을 꺼주고 저장해주어야 다음 회분이 자동으로 결제되지 않는다.*
+[다운로드 링크](https://unity.com/kr/products/unity-mars)에서 다운로드 가능하며 unitypackage 형식으로 제공된다. 만약 unitypackge 파일을 다시 다운로드 받고 싶다면 Unity 사이트 로그인후 settings의 내 계정 - 내 시트에서 다시 다운로드 가능하다. 또한 **무료 체험판만 사용해보고 싶다면 settings의 내 계정 - 내 시트에서 톱니바퀴 모양의 관리 버튼을 누른 뒤 구독 관리에서 자동 갱신을 꺼주고 저장해주어야 다음 회분이 자동으로 결제되지 않는다.**
 유니티는 월 단위 구독을 해도 년 단위로 구독 해지가 가능하기 때문에 주의하여야 한다.
 이후 Unity에 새로운 프로젝트를 만들고 다운받은 unitypackage를 Assets - Import Package - Custom Package...에서 찾아서 임포트 해주면 사용 가능하다.
 
@@ -70,7 +70,7 @@ Hierarchy에 생성된 Image Marker를 누르고 Inspector에서 Maker Condition
 > 그림7.  Synthesized Marker Id
 
 그리고 MARS Panel의 Environment Hierarchy에서 Simluated Markers - Syntheic Image Marker를 더블클릭하면 Simulation View창에서 이 이미지가 존재하는 위치로 화면이 이동되는데 이를 원하는 대로 옴겨주면 된다. 이후 Simulation View창의 재생 모양의 Start Simulation 버튼이나 유니티의 Play 버튼을 눌러서 해당 위치로 이동해 확인을 한다.
-카메라 조작법은 w: 앞으로 이동, s: 뒤로 이동, a: 좌로 이동, d: 우로 이동, q: 아래로 이동, e: 위로 이동이며 *마우스 우클릭으로 화면을 잡고 있어야만 이동 가능* 상태가 된다. 이동하여 확인하면 다음과 같다.
+카메라 조작법은 w: 앞으로 이동, s: 뒤로 이동, a: 좌로 이동, d: 우로 이동, q: 아래로 이동, e: 위로 이동이며 **마우스 우클릭으로 화면을 잡고 있어야만 이동 가능** 상태가 된다. 이동하여 확인하면 다음과 같다.
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-16-UnityMARS_basic_usage/test_in_unity.png" | relative_url }})
 > 그림8.  유니티 상에서 테스트 
