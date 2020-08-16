@@ -59,6 +59,7 @@ Hierarchy에 생성된 Image Marker를 누르고 Inspector에서 Maker Condition
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-16-UnityMARS_basic_usage/scene1.png" | relative_url }})
 > 그림6-1.  Image Marker의 Maker Condition
+
 이는 이미지가 있을 때 생성 오브젝트의 위치를 지정해주는 것으로 이미지와 오브젝트가 겹치면 부자연스러우니 오브젝트를 약간 위로 올려주겠다.
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-16-UnityMARS_basic_usage/scene2.png" | relative_url }})
