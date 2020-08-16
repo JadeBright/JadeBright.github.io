@@ -88,4 +88,4 @@ Hierarchy에 생성된 Image Marker를 누르고 Inspector에서 Maker Condition
 
 ## 다른 조건
 
-위의 예제에서 Image Marker를 예제로 사용하였는데 기본적으로 주어지는 다른 조건들(Plane Size: Plane 사이즈 범위를 조건으로 함, GeoFence: 위도 경도의 위치와 범위를 조건으로 함, Trait - Face: 얼굴 인식 Etc.) 또한 사용 가능하다. 조건들은 Hierarchy 우클릭, MARS - Proxy Object를 누르고 인스펙터의 Add MARS Componnent...의 Condtion을 이용해 추가할 수 있다. 이는 Hierarchy의 Image Marker와 동일한 방식으로 작동한다.
+위의 예제에서 Image Marker를 예제로 사용했는데 기본적으로 주어지는 다른 조건들(Plane Size: Plane 사이즈 범위를 조건으로 함, GeoFence: 위도 경도의 위치와 범위를 조건으로 함, Trait - Face: 얼굴 인식 Etc.) 또한 사용 가능하다. 조건들은 Hierarchy 우클릭, MARS - Proxy Object를 누르고 인스펙터의 Add MARS Componnent...의 Condtion을 이용해 추가할 수 있다. 이는 Hierarchy의 Image Marker와 동일한 방식으로 작동한다.
