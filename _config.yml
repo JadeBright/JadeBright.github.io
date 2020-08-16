@@ -10,7 +10,7 @@
 
 title: Personal Notes                       # the main title
 
-tagline: This is my personal Notes not to forget.  # it will display as the sub-title
+tagline: This is my personal notes not to forget.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -27,8 +27,8 @@ avatar: /assets/img/sample/avatar.jpg   # support internet resources
 github:
   username: JadeBright             # change to your github username
 
-twitter:
-  username:            # change to your twitter username
+#twitter:
+#  username:            # change to your twitter username
 
 social:
   name: JadeBright                  # it will shows as the copyright owner in Footer
