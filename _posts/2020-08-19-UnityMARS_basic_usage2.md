@@ -8,7 +8,7 @@ tags: [Unity MARS]
 
 이번엔 간단한 몇가지 사용해 볼만한 기능들과 스크립트를 통해 얻을 수 있는 것들에 대해서 다루겠다.
 
-##Plane Visualizer
+## Plane Visualizer
 
 Plane Visualizer는 Hierarchy에서 우클릭 후, MARS - Data Visualizer를 눌러서 킬 수 있다.
 이 기능을 키면 mesh형태로 어느부분을 Plane으로 인식했는지 시각적으로 보여준다.
@@ -16,7 +16,7 @@ Plane Visualizer는 Hierarchy에서 우클릭 후, MARS - Data Visualizer를 눌
 ![plane_visualizer]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/plane_visualizer.png" | relative_url }})
 > 그림1. Plane Visualizer
 
-##유니티 내 테스트 환경 전환 및 임포트
+## 유니티 내 테스트 환경 전환 및 임포트
 
 MARS는 유니티 내에서 테스트 환경을 제공해 주는데, 기본적으로 프리셋이 몇 개가 주어져있다.
 이는 Simulation View 창의 상단에 *<*와*>* 모양의 버튼을 눌러서 확인 할 수 있다.
@@ -46,7 +46,7 @@ MARS는 유니티 내에서 테스트 환경을 제공해 주는데, 기본적�
 ![simluated_environment_test]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/simluated_environment_test.png" | relative_url }})
 > 그림5. Simluated Evironment Test
 
-##Proxy Group Queries
+## Proxy Group Queries
 
 MARS는 MARS Database에 카메라에 비춰진 이미지의 특성들을 저장하고 그 특성들을 이용해 조건에 따라서 3D 오브젝트들을 등장시키거나 삭제하거나 한다.
 이전에는 Image Marker를 이용해 예제를 작성하였는데 이는 단일 개체에 대한 생성 조건이었다. MARS는 단일 개체에 대한 생성 조건 뿐만이 아닌 개체들의 집합에 대한 생성 조건과 생성 이후의 업데이트까지 설정 가능하다.
@@ -90,7 +90,7 @@ Action은 생성된 Object의 업데이트 주기별로 업데이트를 어떻�
 ![match_action_test]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/match_action_test.gif" | relative_url }})
 > 그림8-4. Match Action Test
 
-##참고사항
+## 참고사항
 
 여기까지 기본적인 사항이고 추가적으로 제공되는 Provider를 제한하거나 Custom Condition을 만들거나 새로운 특성을 정의하는 등의 기능이 존재한다.
 
