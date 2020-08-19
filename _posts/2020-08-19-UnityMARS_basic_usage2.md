@@ -1,7 +1,7 @@
 ﻿---
 title: Unity MARS 기초 사용법 (2)
 author: JadeBright
-date: 2020-08-19 22:00:00 +0900
+date: 2020-08-19 22:05:00 +0900
 categories: [Unity&C#, AR&VR]
 tags: [Unity MARS]
 ---
@@ -25,7 +25,7 @@ MARS는 유니티 내에서 테스트 환경을 제공해 주는데, 기본적�
 그러면 Simulated Environemnt가 생성되는데 이를 더블클릭하고 Simulated Environemnt의 Hierarchy에 이전에 준비한 모델 Prefab을 드래그앤드롭한다.
 그리고 Hierarchy를 보면 Clipping Region이라고 있을텐데 이를 이용해 환경이 보여지는 범위와 AR을 적용할 범위를 정해주어야한다.
 
-![simulated_environment]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/simulated_environment.png" | relative_url }})
+![simulated_environment]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/simluated_environment.png" | relative_url }})
 > 그림2. Simluated Evironment
 
 다음으로 준비한 모델 Prefab을 Clipping Region의 자식으로 둔다. 그리고 Simluated Environment 프리팹의 Inspector창을 보면 Plane Extraction Settings(Script)가 보일텐데 여기서 Voxel(3차원 상의 픽셀)과 Plane에 대한 수치 설정을 해준다.
