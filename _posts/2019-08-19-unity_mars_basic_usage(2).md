@@ -1,7 +1,7 @@
 ﻿---
 title: Unity MARS 기초 사용법 (2)
 author: Jade Bright
-date: 2020-08-19 20:00:00 +0900
+date: 2020-08-19 20:05:00 +0900
 categories: [Unity&C#, ARVR]
 tags: [Unity MARS]
 ---
