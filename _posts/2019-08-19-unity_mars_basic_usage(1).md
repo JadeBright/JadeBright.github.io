@@ -12,7 +12,7 @@ Unity MARS(Mixed and Augmented Reality Studio)는 지능형 AR 어플리케이�
 
 ## 설치법
 
-(다운로드 링크)[https://unity.com/kr/products/unity-mars]에서 다운로드 가능하며 unitypackage 형식으로 제공된다. 만약 unitypackge 파일을 다시 다운로드 받고 싶다면 Unity 사이트 로그인후 settings의 내 계정 - 내 시트에서 다시 다운로드 가능하다. 또한 **무료 체험판만 사용해보고 싶다면 settings의 내 계정 - 내 시트에서 톱니바퀴 모양의 관리 버튼을 누른 뒤 구독 관리에서 자동 갱신을 꺼주고 저장해주어야 다음 회분이 자동으로 결제되지 않는다.** 유니티는 월 단위 구독을 해도 년 단위로 구독 해지가 가능하기 때문에 주의하여야 한다. 이후 Unity에 새로운 프로젝트를 만들고 다운받은 unitypackage를 Assets - Import Package - Custom Package…에서 찾아서 임포트 해주면 사용 가능하다.
+[다운로드 링크](https://unity.com/kr/products/unity-mars)에서 다운로드 가능하며 unitypackage 형식으로 제공된다. 만약 unitypackge 파일을 다시 다운로드 받고 싶다면 Unity 사이트 로그인후 settings의 내 계정 - 내 시트에서 다시 다운로드 가능하다. 또한 **무료 체험판만 사용해보고 싶다면 settings의 내 계정 - 내 시트에서 톱니바퀴 모양의 관리 버튼을 누른 뒤 구독 관리에서 자동 갱신을 꺼주고 저장해주어야 다음 회분이 자동으로 결제되지 않는다.** 유니티는 월 단위 구독을 해도 년 단위로 구독 해지가 가능하기 때문에 주의하여야 한다. 이후 Unity에 새로운 프로젝트를 만들고 다운받은 unitypackage를 Assets - Import Package - Custom Package…에서 찾아서 임포트 해주면 사용 가능하다.
 
 ## 빌드 환경 설정
 
@@ -28,7 +28,7 @@ Andriod 운영체제를 기준으로 작성 하겠다. 먼저 Unity에서 Window
 
 Window - MARS - MARS Panel 또한 켠다. 이는 Simulation View에서 보이는 가상 환경(?) 상의 오브젝트들의 Hierarchy를 관리하고 MARS의 다양한 기능들을 간단한 클릭 한번으로 구현 가능하게 한다.
 
-![mars_panel]({{ "/assets/img/posts/2020-08-16-UnityMARS_basic_usage/mars_panel.png" | relative_url }})
+![mars_panel]({{ "/assets/img/posts/2020-08-16-UnityMARS_basic_usage/MARS_panel.png" | relative_url }})
 > 그림2. MARS Panel 인터페이스
 
 이 때 Simulation View 아래 쪽을 보면 노란색 삼각형 안에 느낌표가 있는 오류창이 보일텐데 이는 Hierarchy에 MARS Session을 추가하라는 것이다. MARS Session은 MARS Database에 저장될 특성의 목록들을 관리한다. MARS Session을 추가하는 법은 Hierarchy에서 우클릭하고 MARS - MARS Session을 누르면 된다. 지금 다루는 Hierarchy는 일반 Hierarchy이다. MARS Panel의 Hierarchy가 아니다. MARS Panel의 Hierarchy를 사용할 때는 특별히 언급할 것이다.
@@ -39,7 +39,7 @@ Window - MARS - MARS Panel 또한 켠다. 이는 Simulation View에서 보이는
 
 그 후 이렇게 이미지를 추가한 Marker Library를 MARS session에 넣어준다.
 
-![mars_session]({{ "/assets/img/posts/2020-08-16-UnityMARS_basic_usage/mars_session.png" | relative_url }})
+![mars_session]({{ "/assets/img/posts/2020-08-16-UnityMARS_basic_usage/MARS_session.png" | relative_url }})
 > 그림4. Marker Library를 추가한 MARS Session
 
 Hierarchy에서 우클릭, MARS - Presets - Image Marker를 추가한다. 원래 MARS에서는 다양한 조건들을 설정한 객체의 아래에 자식으로 둔 오브젝트를 설정한 조건에 맞춰서 생성되게 할 수 있는데 이는 MARS에서 기본적으로 제공하는 이미지 상에 오브젝트를 생성하게 하는 프리셋이다. Hierarchy에 생성된 Image Marker를 누르고 Inspector에서 Maker Condition을 펼쳐 아까 Marker Library에 넣어둔 이미지를 눌러준다.

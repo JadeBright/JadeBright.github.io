@@ -80,4 +80,4 @@ Action은 생성된 Object의 업데이트 주기별로 업데이트를 어떻�
 
 자세한 사항은 다음 링크를 참조해 보기를 바란다.
 
-(Unity MARS Tutorial)[https://docs.unity3d.com/Packages/com.unity.mars@1.0/manual/index.html]
+[Unity MARS Tutorial](https://docs.unity3d.com/Packages/com.unity.mars@1.0/manual/index.html)
