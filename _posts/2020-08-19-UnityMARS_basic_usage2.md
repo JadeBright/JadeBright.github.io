@@ -1,7 +1,7 @@
 ﻿---
 title: Unity MARS 기초 사용법 (2)
 author: JadeBright
-date: 2020-08-19 22:00:00 +0900
+date: 2020-08-19 21:00:00 +0900
 categories: [Unity&C#, AR&VR]
 tags: [Unity MARS]
 ---
@@ -86,9 +86,6 @@ Action은 생성된 Object의 업데이트 주기별로 업데이트를 어떻�
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/cube_rotate.png" | relative_url }})
 > 그림8-3. CubeRotate
-
-![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/match_action_test.gif" | relative_url }})
-> 그림8-4. Match Action Test
 
 ##참고사항
 
