@@ -1,99 +1,99 @@
----
-title: Unity MARS ±âÃÊ »ç¿ë¹ý (2)
+ï»¿---
+title: Unity MARS ê¸°ì´ˆ ì‚¬ìš©ë²• (2)
 author: JadeBright
 date: 2020-08-19 20:00:00 +0900
 categories: [Unity&C#, AR&VR]
 tags: [Unity MARS]
 ---
 
-ÀÌ¹ø¿£ °£´ÜÇÑ ¸î°¡Áö »ç¿ëÇØ º¼¸¸ÇÑ ±â´Éµé°ú ½ºÅ©¸³Æ®¸¦ ÅëÇØ ¾òÀ» ¼ö ÀÖ´Â °Íµé¿¡ ´ëÇØ¼­ ´Ù·ç°Ú´Ù.
+ì´ë²ˆì—” ê°„ë‹¨í•œ ëª‡ê°€ì§€ ì‚¬ìš©í•´ ë³¼ë§Œí•œ ê¸°ëŠ¥ë“¤ê³¼ ìŠ¤í¬ë¦½íŠ¸ë¥¼ í†µí•´ ì–»ì„ ìˆ˜ ìžˆëŠ” ê²ƒë“¤ì— ëŒ€í•´ì„œ ë‹¤ë£¨ê² ë‹¤.
 
 ##Plane Visualizer
 
-Plane Visualizer´Â Hierarchy¿¡¼­ ¿ìÅ¬¸¯ ÈÄ, MARS - Data Visualizer¸¦ ´­·¯¼­ Å³ ¼ö ÀÖ´Ù.
-ÀÌ ±â´ÉÀ» Å°¸é meshÇüÅÂ·Î ¾î´ÀºÎºÐÀ» PlaneÀ¸·Î ÀÎ½ÄÇß´ÂÁö ½Ã°¢ÀûÀ¸·Î º¸¿©ÁØ´Ù.
+Plane VisualizerëŠ” Hierarchyì—ì„œ ìš°í´ë¦­ í›„, MARS - Data Visualizerë¥¼ ëˆŒëŸ¬ì„œ í‚¬ ìˆ˜ ìžˆë‹¤.
+ì´ ê¸°ëŠ¥ì„ í‚¤ë©´ meshí˜•íƒœë¡œ ì–´ëŠë¶€ë¶„ì„ Planeìœ¼ë¡œ ì¸ì‹í–ˆëŠ”ì§€ ì‹œê°ì ìœ¼ë¡œ ë³´ì—¬ì¤€ë‹¤.
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/plane_visualizer.png" | relative_url }})
-> ±×¸²1. Plane Visualizer
+> ê·¸ë¦¼1. Plane Visualizer
 
-##À¯´ÏÆ¼ ³» Å×½ºÆ® È¯°æ ÀüÈ¯ ¹× ÀÓÆ÷Æ®
+##ìœ ë‹ˆí‹° ë‚´ í…ŒìŠ¤íŠ¸ í™˜ê²½ ì „í™˜ ë° ìž„í¬íŠ¸
 
-MARS´Â À¯´ÏÆ¼ ³»¿¡¼­ Å×½ºÆ® È¯°æÀ» Á¦°øÇØ ÁÖ´Âµ¥, ±âº»ÀûÀ¸·Î ÇÁ¸®¼ÂÀÌ ¸î °³°¡ ÁÖ¾îÁ®ÀÖ´Ù.
-ÀÌ´Â Simulation View Ã¢ÀÇ »ó´Ü¿¡ *<*¿Í*>* ¸ð¾çÀÇ ¹öÆ°À» ´­·¯¼­ È®ÀÎ ÇÒ ¼ö ÀÖ´Ù.
-¶ÇÇÑ ±âº»ÀûÀ¸·Î ÁÖ¾îÁø ÇÁ¸®¼Â¸»°í Á÷Á¢ ÀÓÆ÷Æ® ÇÒ ¼öµµ ÀÖ´Âµ¥, ÀÌ¸¦ À§ÇØ Asset Store¿¡¼­ Àû´çÇÑ ¸ðµ¨ÀÇ ÇÁ¸® ¿¡¼ÂÀ» ÀÓÆ÷Æ® ÇØÁÖ°Ú´Ù.
-ÁØºñ¹°ÀÌ ÁØºñ‰ç´Ù¸é, ¸ÕÀú Project¿¡¼­ ¿ìÅ¬¸¯, Create - MARS - Simulated Environemnt PrefabÀ» ´­·¯ÁØ´Ù.
-±×·¯¸é Simulated Environemnt°¡ »ý¼ºµÇ´Âµ¥ ÀÌ¸¦ ´õºíÅ¬¸¯ÇÏ°í Simulated EnvironemntÀÇ Hierarchy¿¡ ÀÌÀü¿¡ ÁØºñÇÑ ¸ðµ¨ PrefabÀ» µå·¡±×¾Øµå·ÓÇÑ´Ù.
-±×¸®°í Hierarchy¸¦ º¸¸é Clipping RegionÀÌ¶ó°í ÀÖÀ»ÅÙµ¥ ÀÌ¸¦ ÀÌ¿ëÇØ È¯°æÀÌ º¸¿©Áö´Â ¹üÀ§¿Í ARÀ» Àû¿ëÇÒ ¹üÀ§¸¦ Á¤ÇØÁÖ¾î¾ßÇÑ´Ù.
+MARSëŠ” ìœ ë‹ˆí‹° ë‚´ì—ì„œ í…ŒìŠ¤íŠ¸ í™˜ê²½ì„ ì œê³µí•´ ì£¼ëŠ”ë°, ê¸°ë³¸ì ìœ¼ë¡œ í”„ë¦¬ì…‹ì´ ëª‡ ê°œê°€ ì£¼ì–´ì ¸ìžˆë‹¤.
+ì´ëŠ” Simulation View ì°½ì˜ ìƒë‹¨ì— *<*ì™€*>* ëª¨ì–‘ì˜ ë²„íŠ¼ì„ ëˆŒëŸ¬ì„œ í™•ì¸ í•  ìˆ˜ ìžˆë‹¤.
+ë˜í•œ ê¸°ë³¸ì ìœ¼ë¡œ ì£¼ì–´ì§„ í”„ë¦¬ì…‹ë§ê³  ì§ì ‘ ìž„í¬íŠ¸ í•  ìˆ˜ë„ ìžˆëŠ”ë°, ì´ë¥¼ ìœ„í•´ Asset Storeì—ì„œ ì ë‹¹í•œ ëª¨ë¸ì˜ í”„ë¦¬ ì—ì…‹ì„ ìž„í¬íŠ¸ í•´ì£¼ê² ë‹¤.
+ì¤€ë¹„ë¬¼ì´ ì¤€ë¹„ë¬ë‹¤ë©´, ë¨¼ì € Projectì—ì„œ ìš°í´ë¦­, Create - MARS - Simulated Environemnt Prefabì„ ëˆŒëŸ¬ì¤€ë‹¤.
+ê·¸ëŸ¬ë©´ Simulated Environemntê°€ ìƒì„±ë˜ëŠ”ë° ì´ë¥¼ ë”ë¸”í´ë¦­í•˜ê³  Simulated Environemntì˜ Hierarchyì— ì´ì „ì— ì¤€ë¹„í•œ ëª¨ë¸ Prefabì„ ë“œëž˜ê·¸ì•¤ë“œë¡­í•œë‹¤.
+ê·¸ë¦¬ê³  Hierarchyë¥¼ ë³´ë©´ Clipping Regionì´ë¼ê³  ìžˆì„í…ë° ì´ë¥¼ ì´ìš©í•´ í™˜ê²½ì´ ë³´ì—¬ì§€ëŠ” ë²”ìœ„ì™€ ARì„ ì ìš©í•  ë²”ìœ„ë¥¼ ì •í•´ì£¼ì–´ì•¼í•œë‹¤.
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/simulated_environment.png" | relative_url }})
-> ±×¸²2. Simluated Evironment
+> ê·¸ë¦¼2. Simluated Evironment
 
-´ÙÀ½À¸·Î ÁØºñÇÑ ¸ðµ¨ PrefabÀ» Clipping RegionÀÇ ÀÚ½ÄÀ¸·Î µÐ´Ù. ±×¸®°í Simluated Environment ÇÁ¸®ÆÕÀÇ InspectorÃ¢À» º¸¸é Plane Extraction Settings(Script)°¡ º¸ÀÏÅÙµ¥ ¿©±â¼­ Voxel(3Â÷¿ø »óÀÇ ÇÈ¼¿)°ú Plane¿¡ ´ëÇÑ ¼öÄ¡ ¼³Á¤À» ÇØÁØ´Ù.
-ÀÌÈÄ Extract Planes¹öÆ°À» ´©¸£¸é Hierarchy¿¡ Generated Planes°¡ »ý±â´Â°É º¼ ¼ö ÀÖ´Ù. 
+ë‹¤ìŒìœ¼ë¡œ ì¤€ë¹„í•œ ëª¨ë¸ Prefabì„ Clipping Regionì˜ ìžì‹ìœ¼ë¡œ ë‘”ë‹¤. ê·¸ë¦¬ê³  Simluated Environment í”„ë¦¬íŒ¹ì˜ Inspectorì°½ì„ ë³´ë©´ Plane Extraction Settings(Script)ê°€ ë³´ì¼í…ë° ì—¬ê¸°ì„œ Voxel(3ì°¨ì› ìƒì˜ í”½ì…€)ê³¼ Planeì— ëŒ€í•œ ìˆ˜ì¹˜ ì„¤ì •ì„ í•´ì¤€ë‹¤.
+ì´í›„ Extract Planesë²„íŠ¼ì„ ëˆ„ë¥´ë©´ Hierarchyì— Generated Planesê°€ ìƒê¸°ëŠ”ê±¸ ë³¼ ìˆ˜ ìžˆë‹¤. 
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/plane_extraction_settings.png" | relative_url }})
-> ±×¸²3. Plane Extraction Settings
+> ê·¸ë¦¼3. Plane Extraction Settings
 
-ÀÌÁ¦ ´Ù½Ã  Simluated Environment ÇÁ¸®ÆÕÀÇ InspectorÃ¢ÀÇ Plane Extraction Settings(Script)¾Æ·¡¸¦ º¸¸é MARS Environment Settings°¡ ÀÖ´Âµ¥ ¿©±â¼­ Save Environment View¿Í Save Simulation Starting Pose¸¦ ´©¸¥´Ù.
-À§ÀÇ Default Camera World Pose´Â Simulation ViewÃ¢¿¡¼­ Á¶¸ÁÇÏ´Â Ä«¸Þ¶ó À§Ä¡ÀÌ°í Simlation StartingÀº GameÃ¢ÀÌ³ª Device ViewÀÇ ½ÃÀÛ Ä«¸Þ¶ó À§Ä¡ÀÌ´Ù. µüÈ÷ ¼³Á¤À» ÇÏÁö ¾Ê°í ¹öÆ°À» ´­·¯µµ ¾Ë¾Æ¼­ À§Ä¡¸¦ Ã£¾ÆÁØ´Ù.
-
-![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/mars_environment_settings.png" | relative_url }})
-> ±×¸²4. MARS environment Settings
-
-´Ù µÇ¾úÀ¸¸é Simulation View Ã¢¿¡¼­ ¸¸µé¾îÁø Å×½ºÆ® È¯°æÀ» Ã£´Â´Ù. Ã£´Â ¹æ¹ýÀº À§¿¡¼­ ¸»ÇßµíÀÌ *<*¿Í*>*¸¦ ÀÌ¿ëÇØ ³Ñ±â°Å³ª ÁÂÃøÀÇ ÀÌ¸§À» Å¬¸¯ÇØ Ã£À¸¸é µÈ´Ù. Ã£Àº µÚ¿¡ Plane Visualizer¸¦ ÄÑ°í ½ÇÇàÇÏ¸é ´ÙÀ½°ú °°´Ù.
-*Plane Visualizer¸¦ Ãß°¡ÇÒ ¶§ Simluated Environment ÇÁ¸®ÆÕÀÌ ¾Æ´Ñ ±âÁ¸ÀÇ Scene¿¡ Ãß°¡ÇÏµµ·Ï À¯ÀÇÇÑ´Ù.*
+ì´ì œ ë‹¤ì‹œ  Simluated Environment í”„ë¦¬íŒ¹ì˜ Inspectorì°½ì˜ Plane Extraction Settings(Script)ì•„ëž˜ë¥¼ ë³´ë©´ MARS Environment Settingsê°€ ìžˆëŠ”ë° ì—¬ê¸°ì„œ Save Environment Viewì™€ Save Simulation Starting Poseë¥¼ ëˆ„ë¥¸ë‹¤.
+ìœ„ì˜ Default Camera World PoseëŠ” Simulation Viewì°½ì—ì„œ ì¡°ë§í•˜ëŠ” ì¹´ë©”ë¼ ìœ„ì¹˜ì´ê³  Simlation Startingì€ Gameì°½ì´ë‚˜ Device Viewì˜ ì‹œìž‘ ì¹´ë©”ë¼ ìœ„ì¹˜ì´ë‹¤. ë”±ížˆ ì„¤ì •ì„ í•˜ì§€ ì•Šê³  ë²„íŠ¼ì„ ëˆŒëŸ¬ë„ ì•Œì•„ì„œ ìœ„ì¹˜ë¥¼ ì°¾ì•„ì¤€ë‹¤.
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/mars_environment_settings.png" | relative_url }})
-> ±×¸²5. Simluated Evironment Test
+> ê·¸ë¦¼4. MARS environment Settings
+
+ë‹¤ ë˜ì—ˆìœ¼ë©´ Simulation View ì°½ì—ì„œ ë§Œë“¤ì–´ì§„ í…ŒìŠ¤íŠ¸ í™˜ê²½ì„ ì°¾ëŠ”ë‹¤. ì°¾ëŠ” ë°©ë²•ì€ ìœ„ì—ì„œ ë§í–ˆë“¯ì´ *<*ì™€*>*ë¥¼ ì´ìš©í•´ ë„˜ê¸°ê±°ë‚˜ ì¢Œì¸¡ì˜ ì´ë¦„ì„ í´ë¦­í•´ ì°¾ìœ¼ë©´ ëœë‹¤. ì°¾ì€ ë’¤ì— Plane Visualizerë¥¼ ì¼œê³  ì‹¤í–‰í•˜ë©´ ë‹¤ìŒê³¼ ê°™ë‹¤.
+*Plane Visualizerë¥¼ ì¶”ê°€í•  ë•Œ Simluated Environment í”„ë¦¬íŒ¹ì´ ì•„ë‹Œ ê¸°ì¡´ì˜ Sceneì— ì¶”ê°€í•˜ë„ë¡ ìœ ì˜í•œë‹¤.*
+
+![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/mars_environment_settings.png" | relative_url }})
+> ê·¸ë¦¼5. Simluated Evironment Test
 
 ##Proxy Group Queries
 
-MARS´Â MARS Database¿¡ Ä«¸Þ¶ó¿¡ ºñÃçÁø ÀÌ¹ÌÁöÀÇ Æ¯¼ºµéÀ» ÀúÀåÇÏ°í ±× Æ¯¼ºµéÀ» ÀÌ¿ëÇØ Á¶°Ç¿¡ µû¶ó¼­ 3D ¿ÀºêÁ§Æ®µéÀ» µîÀå½ÃÅ°°Å³ª »èÁ¦ÇÏ°Å³ª ÇÑ´Ù.
-ÀÌÀü¿¡´Â Image Marker¸¦ ÀÌ¿ëÇØ ¿¹Á¦¸¦ ÀÛ¼ºÇÏ¿´´Âµ¥ ÀÌ´Â ´ÜÀÏ °³Ã¼¿¡ ´ëÇÑ »ý¼º Á¶°ÇÀÌ¾ú´Ù. MARS´Â ´ÜÀÏ °³Ã¼¿¡ ´ëÇÑ »ý¼º Á¶°Ç »Ó¸¸ÀÌ ¾Æ´Ñ °³Ã¼µéÀÇ ÁýÇÕ¿¡ ´ëÇÑ »ý¼º Á¶°Ç°ú »ý¼º ÀÌÈÄÀÇ ¾÷µ¥ÀÌÆ®±îÁö ¼³Á¤ °¡´ÉÇÏ´Ù.
+MARSëŠ” MARS Databaseì— ì¹´ë©”ë¼ì— ë¹„ì¶°ì§„ ì´ë¯¸ì§€ì˜ íŠ¹ì„±ë“¤ì„ ì €ìž¥í•˜ê³  ê·¸ íŠ¹ì„±ë“¤ì„ ì´ìš©í•´ ì¡°ê±´ì— ë”°ë¼ì„œ 3D ì˜¤ë¸Œì íŠ¸ë“¤ì„ ë“±ìž¥ì‹œí‚¤ê±°ë‚˜ ì‚­ì œí•˜ê±°ë‚˜ í•œë‹¤.
+ì´ì „ì—ëŠ” Image Markerë¥¼ ì´ìš©í•´ ì˜ˆì œë¥¼ ìž‘ì„±í•˜ì˜€ëŠ”ë° ì´ëŠ” ë‹¨ì¼ ê°œì²´ì— ëŒ€í•œ ìƒì„± ì¡°ê±´ì´ì—ˆë‹¤. MARSëŠ” ë‹¨ì¼ ê°œì²´ì— ëŒ€í•œ ìƒì„± ì¡°ê±´ ë¿ë§Œì´ ì•„ë‹Œ ê°œì²´ë“¤ì˜ ì§‘í•©ì— ëŒ€í•œ ìƒì„± ì¡°ê±´ê³¼ ìƒì„± ì´í›„ì˜ ì—…ë°ì´íŠ¸ê¹Œì§€ ì„¤ì • ê°€ëŠ¥í•˜ë‹¤.
 
 **Condition**
 
-ConditionÀº ÀÌÀü¿¡ »ç¿ëÇß´ø Image Marker¿Í °°ÀÌ ´ÜÀÏ °³Ã¼ÀÇ »ý¼º Á¶°ÇÀ» ´Ù·ç´Â °ÍÀÌ´Ù. ÀÌÀü¿¡ ´Ù·ð´ø °ÍÃ³·³ Hierarchy ¿ìÅ¬¸¯, MARS Proxy Object¸¦ ´©¸£°í ÀÎ½ºÆåÅÍÀÇ Add MARS Component, Condition³»¿¡¼­ Á¶°ÇÀ» ¼±ÅÃÇÏ¸é µÈ´Ù.
-ÀÌÈÄ »ý¼ºÇÏ°í ½ÍÀº ¹°Ã¼¸¦ Proxy ObjectÀÇ ÀÚ½ÄÀ¸·Î µÎ¸éµÈ´Ù.
-¿¹Àç·Î Condition - Trait - Is PlaneÀ» »ç¿ëÇØº¼ °ÍÀÌ´Ù. ÀÌ°ÍÀº °¡Àå ±âº»ÀûÀÎ Á¶°ÇÀ¸·Î PlaneÀÌ Á¸ÀçÇÑ´Ù¸é ±× ¹°Ã¼¸¦ »ý¼º ÇÏ´Â °ÍÀÌ´Ù.
+Conditionì€ ì´ì „ì— ì‚¬ìš©í–ˆë˜ Image Markerì™€ ê°™ì´ ë‹¨ì¼ ê°œì²´ì˜ ìƒì„± ì¡°ê±´ì„ ë‹¤ë£¨ëŠ” ê²ƒì´ë‹¤. ì´ì „ì— ë‹¤ë¤˜ë˜ ê²ƒì²˜ëŸ¼ Hierarchy ìš°í´ë¦­, MARS Proxy Objectë¥¼ ëˆ„ë¥´ê³  ì¸ìŠ¤íŽ™í„°ì˜ Add MARS Component, Conditionë‚´ì—ì„œ ì¡°ê±´ì„ ì„ íƒí•˜ë©´ ëœë‹¤.
+ì´í›„ ìƒì„±í•˜ê³  ì‹¶ì€ ë¬¼ì²´ë¥¼ Proxy Objectì˜ ìžì‹ìœ¼ë¡œ ë‘ë©´ëœë‹¤.
+ì˜ˆìž¬ë¡œ Condition - Trait - Is Planeì„ ì‚¬ìš©í•´ë³¼ ê²ƒì´ë‹¤. ì´ê²ƒì€ ê°€ìž¥ ê¸°ë³¸ì ì¸ ì¡°ê±´ìœ¼ë¡œ Planeì´ ì¡´ìž¬í•œë‹¤ë©´ ê·¸ ë¬¼ì²´ë¥¼ ìƒì„± í•˜ëŠ” ê²ƒì´ë‹¤.
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/is_plane.png" | relative_url }})
-> ±×¸²6. Is Plane Condition Test
+> ê·¸ë¦¼6. Is Plane Condition Test
 
 **Relation**
 
-ReationÀº Proxy ObjectµéÀ» ÀÚ½ÄÀ¸·Î µÐ Proxy Group¿¡ °¢ ÀÚ½Äµé °£ÀÇ »ó°ü Á¶°ÇÀ» ÀÌ¿ëÇØ »ý¼º Á¶°ÇÀ» ¼³Á¤ ÇÏ´Â °ÍÀÌ´Ù. Proxy Group´Â À§¿Í °°ÀÌ Hierarchy¸¦ ¿ìÅ¬¸¯ÇÏ°í MARS Proxy GroupÀ» ´©¸£°í ÀÎ½ºÆåÅÍ¿¡¼­ Add MARS Component¸¦ ´©¸£¸é ReationÀÌ º¸ÀÎÅÙµ¥ ¿©±â¼­ °í¸¦ ¼ö ÀÖ´Ù.
-¿¹Á¦´Â Distance RelationÀ¸·Î ÁøÇàÇß´Ù.
+Reationì€ Proxy Objectë“¤ì„ ìžì‹ìœ¼ë¡œ ë‘” Proxy Groupì— ê° ìžì‹ë“¤ ê°„ì˜ ìƒê´€ ì¡°ê±´ì„ ì´ìš©í•´ ìƒì„± ì¡°ê±´ì„ ì„¤ì • í•˜ëŠ” ê²ƒì´ë‹¤. Proxy GroupëŠ” ìœ„ì™€ ê°™ì´ Hierarchyë¥¼ ìš°í´ë¦­í•˜ê³  MARS Proxy Groupì„ ëˆ„ë¥´ê³  ì¸ìŠ¤íŽ™í„°ì—ì„œ Add MARS Componentë¥¼ ëˆ„ë¥´ë©´ Reationì´ ë³´ì¸í…ë° ì—¬ê¸°ì„œ ê³ ë¥¼ ìˆ˜ ìžˆë‹¤.
+ì˜ˆì œëŠ” Distance Relationìœ¼ë¡œ ì§„í–‰í–ˆë‹¤.
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/distance_relation_inspector.png" | relative_url }})
-> ±×¸²7-1. Distance Relation Inspector & Hierarchy
+> ê·¸ë¦¼7-1. Distance Relation Inspector & Hierarchy
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/distance_relation_test.png" | relative_url }})
-> ±×¸²7-2. Distance Relation Test
+> ê·¸ë¦¼7-2. Distance Relation Test
 
 **Action**
 
-ActionÀº »ý¼ºµÈ ObjectÀÇ ¾÷µ¥ÀÌÆ® ÁÖ±âº°·Î ¾÷µ¥ÀÌÆ®¸¦ ¾î¶»°Ô ÇÒ °ÍÀÎ°¡, ÇØ´ç ½ÇÃ¼ È¯°æÀÇ Á¶°ÇÀÌ µÇ´Â ¹°Ã¼°¡ ¿À·§ µ¿¾È °»½ÅÀÌ µÇÁö ¾Ê°Å³ª ³Ê¹« ¸¹ÀÌ º¯ÇüµÇ¾î¼­ ¿ÀºêÁ§Æ®¸¦ »èÁ¦ÇÒ ¶§ ¾î¶°ÇÑ ÀÌº¥Æ®¸¦ ÁÙ °ÍÀÎ°¡¸¦ ¼³Á¤ÇÏ´Â °ÍÀÌ´Ù.
-À§ÀÇ °úÁ¤Àº Match ActionÀ¸·Î ÇÔ¼ö ´ÜÀ§·Î ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù. ´Ù¸¥ ÇÁ¸®¼ÂµéÀº À§ÀÇ °úÁ¤ÀÌ ºÐ¸®µÇ¾î ÀÖÁö ¾Ê°í ÇÏ³ª·Î ¹­¿©ÀÖ´Ù. »ç¿ë¹ýÀº Proxy ObjectÀÇ  Add MARS Component, Action¿¡¼­ ¼±ÅÃÇÏ¸é µÈ´Ù.
-¿¹Á¦´Â Match ActionÀ» ÀÌ¿ëÇÒ °ÍÀÌ´Ù. ¸ÕÀú Condtion - Is PlaneÀ¸·Î »ý¼º Á¶°ÇÀ» ´Þ¾ÆÁØ´Ù. ±× µÚ Action¿¡¼­ Match ActionÀ» °í¸£°í On Match Update¸¦ ´­·¯ÁØ´Ù. ÀÌ´Â °³Ã¼ °»½Å¸¶´Ù ¹°Ã¼¿¡ Àû¿ëµÈ´Ù. ´Ù¸¥ On Match Acquire´Â °³Ã¼ »ý¼º½Ã ÃÖÃÊ¿¡, On Match Loss´Â °³Ã¼ÀÇ Á¶°ÇÀÌ ´õ ÀÌ»ó ¸¸Á·µÇÁö ¾ÊÀ» ¶§, On Match TimeoutÀº Æ¯Á¤ ½Ã°£ µ¿¾È °³Ã¼ÀÇ ¸ð½ÀÀ» ºñÃßÁö ¾ÊÀ» ¶§ Àû¿ëµÈ´Ù.
-±×¸®°í Å×½ºÆ®¸¦ À§ÇÑ CubeRotate ÇÔ¼ö¸¦ ÀÛ¼ºÇÏ°í Proxy Object ÀÚ½ÄÀÌ µÇ´Â Cube¿¡ ³Ö¾îÁØ´Ù. ÀÌÈÄ Proxy ObjectÀÇ ÀÎ½ºÆåÅÍ¿¡¼­ Match Action - On Match Update - None Object¿¡ ÀÚ½ÄÀÌ µÇ´Â Cube¸¦ ³Ö¾îÁÖ°í ¿ìÃøÀÇ No Function¿¡ CubeRotate bool.enabled¸¦ ¼±ÅÃÇÏ°í ¾Æ·¡ Ã¼Å©¸¦ ÇØÁÖ¸é µÈ´Ù.
+Actionì€ ìƒì„±ëœ Objectì˜ ì—…ë°ì´íŠ¸ ì£¼ê¸°ë³„ë¡œ ì—…ë°ì´íŠ¸ë¥¼ ì–´ë–»ê²Œ í•  ê²ƒì¸ê°€, í•´ë‹¹ ì‹¤ì²´ í™˜ê²½ì˜ ì¡°ê±´ì´ ë˜ëŠ” ë¬¼ì²´ê°€ ì˜¤ëž« ë™ì•ˆ ê°±ì‹ ì´ ë˜ì§€ ì•Šê±°ë‚˜ ë„ˆë¬´ ë§Žì´ ë³€í˜•ë˜ì–´ì„œ ì˜¤ë¸Œì íŠ¸ë¥¼ ì‚­ì œí•  ë•Œ ì–´ë– í•œ ì´ë²¤íŠ¸ë¥¼ ì¤„ ê²ƒì¸ê°€ë¥¼ ì„¤ì •í•˜ëŠ” ê²ƒì´ë‹¤.
+ìœ„ì˜ ê³¼ì •ì€ Match Actionìœ¼ë¡œ í•¨ìˆ˜ ë‹¨ìœ„ë¡œ ì§€ì •í•  ìˆ˜ ìžˆë‹¤. ë‹¤ë¥¸ í”„ë¦¬ì…‹ë“¤ì€ ìœ„ì˜ ê³¼ì •ì´ ë¶„ë¦¬ë˜ì–´ ìžˆì§€ ì•Šê³  í•˜ë‚˜ë¡œ ë¬¶ì—¬ìžˆë‹¤. ì‚¬ìš©ë²•ì€ Proxy Objectì˜  Add MARS Component, Actionì—ì„œ ì„ íƒí•˜ë©´ ëœë‹¤.
+ì˜ˆì œëŠ” Match Actionì„ ì´ìš©í•  ê²ƒì´ë‹¤. ë¨¼ì € Condtion - Is Planeìœ¼ë¡œ ìƒì„± ì¡°ê±´ì„ ë‹¬ì•„ì¤€ë‹¤. ê·¸ ë’¤ Actionì—ì„œ Match Actionì„ ê³ ë¥´ê³  On Match Updateë¥¼ ëˆŒëŸ¬ì¤€ë‹¤. ì´ëŠ” ê°œì²´ ê°±ì‹ ë§ˆë‹¤ ë¬¼ì²´ì— ì ìš©ëœë‹¤. ë‹¤ë¥¸ On Match AcquireëŠ” ê°œì²´ ìƒì„±ì‹œ ìµœì´ˆì—, On Match LossëŠ” ê°œì²´ì˜ ì¡°ê±´ì´ ë” ì´ìƒ ë§Œì¡±ë˜ì§€ ì•Šì„ ë•Œ, On Match Timeoutì€ íŠ¹ì • ì‹œê°„ ë™ì•ˆ ê°œì²´ì˜ ëª¨ìŠµì„ ë¹„ì¶”ì§€ ì•Šì„ ë•Œ ì ìš©ëœë‹¤.
+ê·¸ë¦¬ê³  í…ŒìŠ¤íŠ¸ë¥¼ ìœ„í•œ CubeRotate í•¨ìˆ˜ë¥¼ ìž‘ì„±í•˜ê³  Proxy Object ìžì‹ì´ ë˜ëŠ” Cubeì— ë„£ì–´ì¤€ë‹¤. ì´í›„ Proxy Objectì˜ ì¸ìŠ¤íŽ™í„°ì—ì„œ Match Action - On Match Update - None Objectì— ìžì‹ì´ ë˜ëŠ” Cubeë¥¼ ë„£ì–´ì£¼ê³  ìš°ì¸¡ì˜ No Functionì— CubeRotate bool.enabledë¥¼ ì„ íƒí•˜ê³  ì•„ëž˜ ì²´í¬ë¥¼ í•´ì£¼ë©´ ëœë‹¤.
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/match_action_inspector.png" | relative_url }})
-> ±×¸²8-1. Match Action ÀÎ½ºÆåÅÍ
+> ê·¸ë¦¼8-1. Match Action ì¸ìŠ¤íŽ™í„°
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/cube_inspector.png" | relative_url }})
-> ±×¸²8-2. Cube ÀÎ½ºÆåÅÍ
+> ê·¸ë¦¼8-2. Cube ì¸ìŠ¤íŽ™í„°
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/cube_rotate.png" | relative_url }})
-> ±×¸²8-3. CubeRotate
+> ê·¸ë¦¼8-3. CubeRotate
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-19-UnityMARS_basic_usage2/match_action_test.gif" | relative_url }})
-> ±×¸²8-4. Match Action Test
+> ê·¸ë¦¼8-4. Match Action Test
 
-##Âü°í»çÇ×
+##ì°¸ê³ ì‚¬í•­
 
-¿©±â±îÁö ±âº»ÀûÀÎ »çÇ×ÀÌ°í Ãß°¡ÀûÀ¸·Î Á¦°øµÇ´Â Provider¸¦ Á¦ÇÑÇÏ°Å³ª Custom ConditionÀ» ¸¸µé°Å³ª »õ·Î¿î Æ¯¼ºÀ» Á¤ÀÇÇÏ´Â µîÀÇ ±â´ÉÀÌ Á¸ÀçÇÑ´Ù.
+ì—¬ê¸°ê¹Œì§€ ê¸°ë³¸ì ì¸ ì‚¬í•­ì´ê³  ì¶”ê°€ì ìœ¼ë¡œ ì œê³µë˜ëŠ” Providerë¥¼ ì œí•œí•˜ê±°ë‚˜ Custom Conditionì„ ë§Œë“¤ê±°ë‚˜ ìƒˆë¡œìš´ íŠ¹ì„±ì„ ì •ì˜í•˜ëŠ” ë“±ì˜ ê¸°ëŠ¥ì´ ì¡´ìž¬í•œë‹¤.
 
-ÀÚ¼¼ÇÑ »çÇ×Àº ´ÙÀ½ ¸µÅ©¸¦ ÂüÁ¶ÇØ º¸±â¸¦ ¹Ù¶õ´Ù.
+ìžì„¸í•œ ì‚¬í•­ì€ ë‹¤ìŒ ë§í¬ë¥¼ ì°¸ì¡°í•´ ë³´ê¸°ë¥¼ ë°”ëž€ë‹¤.
 
-[Unity Tutorial](https://docs.unity3d.com/Packages/com.unity.mars@1.0/manual/index.html)
+[Unity MARS Tutorial](https://docs.unity3d.com/Packages/com.unity.mars@1.0/manual/index.html)
