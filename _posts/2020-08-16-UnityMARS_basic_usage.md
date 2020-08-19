@@ -1,7 +1,7 @@
 ﻿---
 title: Unity MARS 기초 사용법 (1)
 author: JadeBright
-date: 2020-08-16 23:00:00 +0900
+date: 2020-08-16 23:05:00 +0900
 categories: [Unity&C#, AR&VR]
 tags: [Unity MARS]
 ---
@@ -65,7 +65,7 @@ Hierarchy에 생성된 Image Marker를 누르고 Inspector에서 Maker Condition
 ![simulation_view]({{ "/assets/img/posts/2020-08-16-UnityMARS_basic_usage/scene2.png" | relative_url }})
 > 그림6-2.  Image Marker의 Maker Condition
 
-이렇게 하고 빌드하면 작동이 된다. 하지만 MARS에서는 위에서 말했듯이 유니티 에디터 상에서 테스트를 할 수 있다. MARS Panel의 Create - Simulated - Synthetic Image를 누르면 MARS Panel의 Environment Hierarchy에서 Simluated Markers - Syntheic Image Marker가 생긴다. 클릭하면 인스펙터의 Sysnthesized Marker Id에서 이미지를 선택한다.
+이렇게 하고 빌드하면 작동이 된다. 하지만 MARS에서는 위에서 말했듯이 유니티 에디터 상에서 테스트를 할 수 있다. MARS Panel의 Create - Simulated - Synthetic Image를 누르면 MARS Panel의 Environment Hierarchy에서 Simluated Markers - Syntheic Image Marker가 생긴다. 클릭하고 인스펙터의 Sysnthesized Marker Id에서 이미지를 선택한다.
 
 ![simulation_view]({{ "/assets/img/posts/2020-08-16-UnityMARS_basic_usage/synthesized_marker_id.png" | relative_url }})
 > 그림7.  Synthesized Marker Id
