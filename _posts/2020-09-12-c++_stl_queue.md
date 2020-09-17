@@ -3,20 +3,20 @@ title: C++ STL - Queue
 author: Jade Bright
 date: 2020-09-12 21:11:00 +0900
 categories: [C++]
-tags: [STL]
+tags: [C++STL]
 ---
 
-##Header
+## Header
 ```c++
 #inlcude <queue>
 ```
-##생성
+## 생성
 
 일반 큐: queue<data_type> q, queue<data_type, container_type> q
 
 우선순위 큐:  priority_queue<data_type> q, priority_queue<data_type, container_type, compare> q
 
-##함수
+## 함수
 
 삽입: push(val)
 
@@ -32,7 +32,7 @@ tags: [STL]
 
 원소의 개수 조사: size() - size_type을 반환
 
-##예제
+## 예제
 ```c++
 //Header
 #include<iostream>
