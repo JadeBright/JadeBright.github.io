@@ -1,5 +1,5 @@
 ﻿---
-title: C++ STL: Queue
+title: C++ STL - Queue
 author: Jade Bright
 date: 2020-09-12 21:11:00 +0900
 categories: [C++]
