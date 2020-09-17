@@ -1,15 +1,15 @@
 ﻿---
 title: C++ STL: Queue
 author: Jade Bright
-date: 2020-09-12 20:11:00 +0900
+date: 2020-09-12 21:11:00 +0900
 categories: [C++]
 tags: [STL]
 ---
 
 ##Header
-
-inlcude<queue>
-
+```c++
+#inlcude <queue>
+```
 ##생성
 
 일반 큐: queue<data_type> q, queue<data_type, container_type> q
@@ -44,7 +44,7 @@ using namespace std;
 
 struct compare
 {
-	bool operator()(pair<int, int> &a, pair<int, int> &b)
+	bool operator()(pair<int, int>& a, pair<int, int>& b)
 	{
 		return (a.first + a.second) < (b.first + b.second);
 	}
@@ -54,11 +54,11 @@ int main()
 {
 	//생성
 
-	queue<int, vector<int> > q;
+	queue<int> q;
 	//queue<int> q;
 	priority_queue<int, vector<int>, greater<int> > pq;//오름차순 내림차순은 less
 	//priority_queue<int> pq; 내림차순이 기본
-	
+
 	//함수
 	q.empty();
 	q.push(1);
@@ -66,7 +66,7 @@ int main()
 	cout << q.empty() << endl; //0: false, 1: true
 	q.push(2);
 	cout << q.size() << endl;
-	cout << pq.empty() << endl; 
+	cout << pq.empty() << endl;
 	pq.push(1);
 	cout << pq.size() << endl;
 	cout << pq.empty() << endl;
@@ -97,7 +97,7 @@ int main()
 	//tie(a, b, ignore) = q3.front(); 마지막 원소는 생략
 
 	//compare 사용
-	priority_queue<pair<int, int>, vector<pair<int,int> >, compare > pq2;
+	priority_queue<pair<int, int>, vector<pair<int, int> >, compare > pq2;
 	pq2.push({ 1, 7 });
 	pq2.push({ 2, 4 });
 	cout << pq2.top().first << " " << pq2.top().second << endl;
