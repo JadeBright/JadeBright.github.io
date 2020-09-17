@@ -1,7 +1,7 @@
 ﻿---
 title: C++ STL - Queue
 author: Jade Bright
-date: 2020-09-12 21:11:00 +0900
+date: 2020-09-12 22:11:00 +0900
 categories: [C++]
 tags: [C++STL]
 ---
@@ -12,7 +12,7 @@ tags: [C++STL]
 ```
 ## 생성
 
-일반 큐: queue<data_type> q, queue<data_type, container_type> q
+일반 큐: queue<data_type> q
 
 우선순위 큐:  priority_queue<data_type> q, priority_queue<data_type, container_type, compare> q
 
@@ -90,7 +90,8 @@ int main()
 	//tuple 사용
 	queue<tuple<int, int, int> > q3;
 	q3.push(make_tuple(1, 2, 3));
-	cout << get<0>(q3.front()) << " " << get<1>(q3.front()) << " " << get<2>(q3.front()) << endl;
+	cout << get<0>(q3.front()) << " " << get<1>(q3.front()) << " " \
+	<< get<2>(q3.front()) << endl;
 	int a, b, c;
 	tie(a, b, c) = q3.front();
 	cout << a << " " << b << " " << c << endl;
