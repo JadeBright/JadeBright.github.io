@@ -11,14 +11,14 @@
   type: email
   icon: 'fas fa-envelope'
 
--
-  type: twitter
-  icon: 'fab fa-twitter'
-  noblank: false            # open link in current tab
--
-  type: rss
-  icon: 'fas fa-rss'
-  noblank: false
+#-
+#  type: twitter
+#  icon: 'fab fa-twitter'
+#  noblank: false            # open link in current tab
+#-
+#  type: rss
+#  icon: 'fas fa-rss'
+#  noblank: false
 
 # Uncomment and complete the url below to enable more contact options
 # -
